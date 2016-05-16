@@ -1,0 +1,143 @@
+//== Fonts:
+$emBase: 14px;
+$letter-spacing: 0.02em;
+$line-height: 1.5em;
+$letter-spacingPx: 0px;
+// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font-size-base:          14px !default;
+// $line-height-base:        1.428571429 !default; // 20/14
+
+
+//== Colors:
+$brand-primary: black;
+$link-color: #2e2d2c;
+$text-color: black;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              10 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         40px;
+
+
+// == Navbar
+// $navbar-default-color:             #777 !default;
+// $navbar-default-bg:                hsla(0,0%,100%,.9);
+// $navbar-default-border:            #e1e1e1;
+
+// Navbar links
+// $navbar-default-link-color:                #777 !default;
+// $navbar-default-link-hover-color:          #333 !default;
+// $navbar-default-link-hover-bg:             transparent !default;
+// $navbar-default-link-active-color:         #555 !default;
+// $navbar-default-link-active-bg:            transparent;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+// $navbar-default-brand-color:               #333;
+// $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+// $navbar-default-brand-hover-bg:            transparent !default;
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
+$screen-xs:                  320px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+$screen-md:                  1024px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// Extra Large screen / wide desktop
+$screen-xl:                  1800px !default;
+$screen-xl-min:              $screen-xl !default;
+$screen-xl-desktop:          $screen-xl-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xxs-max:              ($screen-xs-min - 1) !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-lg-max:              ($screen-xl-min - 1) !default;
+
+
+
+// CUSTOM VARIABLES
+// $screen-tiny: $screen-xs-min - 1;
+// $screen-short: 400px;
+// $screen-tall: 676px;
+
+// Media queries
+$xSmall: "(min-width: #{$screen-xs-min})";
+$small: "(min-width: #{$screen-sm-min})";
+$medium: "(min-width: #{$screen-md-min})";
+$large: "(min-width: #{$screen-lg-min})";
+$xLarge: "(min-width: #{$screen-xl-min})";
+$smallDown: "(max-width: #{$screen-sm-max})";
+
+// Media queries by name
+$mobileOnly: "(max-width: #{$screen-xs-max})"; // < 768
+$tabletOnly: "(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})"; // 768 ? width < 1024
+
+$tabletDown: "(max-width: #{$screen-sm-max})"; // < 1024
+$tabletUp: "(min-width: #{$screen-sm-min})"; // ? 768
+$desktopUp: "(min-width: #{$screen-md-min})"; // ? 1024
+$desktopLargeUp: "(min-width: #{$screen-lg-min})"; // ? 1192
+$desktopXLargeUp: "(min-width: #{$screen-xl-min})"; // ? 1396
+
+$landscape: "(orientation: landscape)";
+$portrait: "(orientation: portrait)";
+
+
+$font-path:        "fonts" !default;
+$plainThinFont: 'PlainThin', arial, helvetica, sans-serif;
+$nationale-font: "Nationale", Arial, Helvetica, sans-serif;
+$korgo-font: "KorGo", Arial, Helvetica, sans-serif;
+
+
+// Fonts
+$bodyFontSize: 13px;
+$bodyLineHeight: 24px;
+$bodyFontSizeTablet: 13px;
+$bodyLineHeightTablet: 20px;
+
+
+// Dimensions
+$landingImageExtraWidth: 260px;
+$landingHeight: 100%;
+$landingPadding: 33px;
+$landingPaddingTablet: 28px;
+$desktopLargeUpIndent: 90px;
+$portraitRatio: 130%;
+$landscapeRatio: 56.25%;
+$squareRatio: 100%;
+$padderMin: 120px;
+$padderMax: 250px;
+$padderPercent: 11.7%;
+
+// Misc
+$defaultOverflowY: scroll;

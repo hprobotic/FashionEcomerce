@@ -1,0 +1,15 @@
+.idea
+node_modules
+*.phpproj
+*.sln
+.DS_Store
+apache
+.vs
+*.orig
+*.map
+/nbproject/private/
+/src/sites/default/files
+/src/sites/default/settings.php
+src/sites/default/settings.php
+vendor
+src/sites/default/files/

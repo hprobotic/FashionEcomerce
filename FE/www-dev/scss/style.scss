@@ -1,3 +1,5 @@
+// Import plugin and ultilities
+
 @import "animate";
 @import "variables";
 @import "ultilities";
@@ -15,7 +17,9 @@ $borderDarkColor: #5c5a58;
 $darkerColor: #171717;
 $redColor: #cc0000;
 
+// Import page css
 
+@import './page/homepage.scss';
 * {
     margin: 0; 
     padding: 0;
